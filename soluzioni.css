@@ -1,0 +1,143 @@
+.ex-1-square:hover{
+
+    background-color: red;
+    transition: 2s;
+
+}
+
+
+.ex-2-square:active{
+    transition: 2s;
+    width: 100%;
+}
+
+.ex-3-square:hover{
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.ex-4-square:hover{
+    background-color: transparent;
+    transition: 1s;
+}
+
+.ex-5-square:hover{
+    transform: scale(2);
+    transition: 1s;
+
+}
+.ex-5-square:active{
+    transform: scale(0.5);
+    transition: 1s;
+}
+
+.ex-6-img:hover{
+    filter: grayscale(1);
+}
+
+.ex-8-img:hover{
+    filter: grayscale(1);
+    filter: sepia(0.7);
+    border-radius: 15px;
+    transition: 2s;
+}
+
+.ex-9-img:hover{
+
+    transform: scale(1.5);
+    filter: grayscale(1);
+    filter: sepia(0.7);
+    border-radius: 20px;
+    transition: 2s;
+}
+
+
+
+
+@keyframes rotazione1 {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(-360deg)}
+    
+}
+
+.ex-10-icon{
+    animation: rotazione1 1s infinite linear;
+}
+
+
+
+
+@keyframes rotat {
+    
+    0% {transform: rotate(0deg);}  
+    70%{transform: rotate(0.75turn);}
+    100%{transform: rotate(0%);}
+}
+
+
+.ex-11-icon:hover{
+
+    animation: rotat 2s linear ;
+   
+}
+
+
+
+
+@keyframes topwhiteleft-right {
+    0%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(190%);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+.ex-12-button:hover .ex-12-top-white{
+    animation: topwhiteleft-right 2s infinite linear;
+}
+@keyframes botwhiteright-lef {
+    0%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(-160%);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+
+}
+.ex-12-button:hover .ex-12-bottom-white{
+    animation: botwhiteright-lef 2s infinite linear;
+}
+
+/* 
+
+@keyframes topwhite {
+   0% {left: 100%;}
+   25% {down: 100%;}
+
+
+
+}   
+.ex-13-button:hover .ex-13-top-white{
+    animation: topwhite 2s infinite linear;
+}
+@keyframes botwhiteright-lef {
+    0%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(-160%);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+
+}
+.ex-12-button:hover .ex-12-bottom-white{
+    animation: botwhiteright-lef 2s infinite linear;
+} */
